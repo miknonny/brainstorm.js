@@ -13,6 +13,7 @@ var gender = 'male',
 console.log(greet(gender, age, name));
 
 // We use the bind method to curry. Present one or more of our  parameters.
+// this allows us to specify the extra parameter that we need.
 
 var greetAnAdultMale = greet.bind(null, 'male', 45);
 console.log(greetAnAdultMale('jerry'));
