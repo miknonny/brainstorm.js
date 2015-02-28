@@ -1,0 +1,21 @@
+NPM. 
+Enter `npm help` to get general help.
+
+# Updating NPM.
+`npm install npm -g`
+
+# Installing a module.
+npm install <module name>
+
+#Listing all the module dependencies.
+`npm ls`
+
+# Installing and saving the dependencies  in a package.json file.
+
+`npm install --save`
+
+# Writing npm test.
+
+'touch test.js'
+edit package.json to point to test.js.
+

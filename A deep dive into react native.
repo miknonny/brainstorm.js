@@ -1,0 +1,227 @@
+A deep dive into react native.
+Touch handling.
+-ios touch handling is much better.
+Native components.
+
+style & layout.
+In css there is the use of global variables.
+Flexbox.
+
+
+please make sure to check out react native.
+
+
+--------------------------------------------------------------------------
+Tweak your page in realtime.
+Modules are not available in the browser yet.
+Modules can be used today with webpack in the browser.
+
+
+check up react hotloader. to see how it works. for live editing.
+
+
+Ambidex.
+Ambidex fetches data with out hitting your server.
+combines a bunch of awesome libraries.
+
+react.
+webpack
+rect-hot-loader.
+react-router.
+reflux.
+mach.
+
+Ambidex. is available today at npm and github.
+
+npm install Ambidex.
+git clone <search for ambidex.>
+
+The ultimate work flow.
+
+THe ultimate work flow.
+break your app into modules.
+deliver those modules to the browser with webpack.
+work in real-time with react-hot-loader.
+Test on a real hardware with a proxy like charles. 3 phone size views can fit  perfectly into an 8" tablet.
+your server is just an api.
+every client can use thesame coldebase.
+
+
+
+
+imperative
+declarative
+--------------------------------------------------------------------------------
+Unlocking the structure of your application with AST.
+---------------------------------------------------------------
+quote from Edsger W. Dijkstra.
+we should do our utmost best to shorten the conceptual gap between the static program and the dynamic process. to make the correspondence between the program and the process as trivial as possible.
+
+
+
+static analysis.
+this is the nature of being able to analyse our application just based on the code. without actually executing any code.
+This is one of the coolest features  of react as this tends to get overshadowed by virtual dom.
+
+
+what has made static analysis difficult in the past.
+
+Data fetching with react applications.
+
+Data fetching for react application.
+--------------------------------------------------------------------------------
+A case study of facebook.
+There are three major components here.
+friendlist.
+friendlist item.
+friend info component
+
+
+insidious
+
+
+---------------------------------------------------------------------------
+Chqannels.
+
+
+
+
+---------------------------------------------------------------------------
+React router.
+---------------------------------------------------------------------------
+Full stack flux pete hunt.
+------------------------------------------------------------------------------
+Making your app fast with high performance components.
+------------------------------------------------
+FORMATING WITH FORMATJS AND REACTINTL.
+this is mainly used to formate date and time in react applications. as it is declarative as opposed to being imperative on other systems.
+
+AT YAHOO they used the icu message syntax to define their strings.
+format.js
+This is a set of libraries one of which is reactIntl.
+They really believe that formating data in the declarative way is the way to do this.
+note that our components should be as stateless as possible.
+performance - very important.
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------
+React and web componenet.
+webcomponents should be small.
+they should be extrememly encapsulated.
+
+------------------------------------------------------
+immutable data in react and flux.
+immmutable means that once you have created it that you can never cgha==
+
+
+
+-------------------------------------------------------
+Beyond the dom, how netflix plans to enhance your television experience.
+
+-------------------------------------------------------------
+I DO NOT LIKE FRAMEWORKS. THAT IS BECAUSE SOMEONE HAS MADE SOMECHO
+-------------------------------------------------------------
+
+BIG HAS NOTHING TO DO WITH WHETHER SOMETHING IS COMPLEX OR NOT.
+
+On using react it is shocking on  how simple the whole system is.
+
+when i look at frameworks i think that someone has made some choices cos they think that they know how i should solve my8 problem.
+
+its not about solutions its about a process.
+
+
+
+those other framewrks has embraced the mutability of javascript which makes it impossible for those other frameworks to make use of it.
+
+
+
+----------------------------------------------------------------------
+Code academys approach to react. 
+
+bonnie read the tutorial, sample code from khanacademy.
+
+they use this thing called dispatcher which works in a similar way to 
+flux.
+
+----------------------------------------------------------------------
+coherent
+
+---------------------------------------------------------------------
+react Q and A.
+
+react is actually originally built in standardML. but jordan could not make it 
+work so we decided to build in javascript.
+
+take a look at web pack.
+you really have to understand how that thing works under the hood.
+
+---------------------------------------------------------------------
+static typing and flow with typescript.
+
+
+------------------------------------------------------------------
+Pete Hunt rethinking best practices.
+coupling - This is the degreee to which prgram modules reply on each of the other modules.
+cohesion - This is the degree to which elements of a software belong together.
+
+
+Pete argues that templates seperates poor seperation of concerns.
+normally yout template and controller are tied together with something called the view model.
+
+display logic and markup are highly cohesive.
+they are taking user events and they are rendering data to the user.
+he argues that templates sepeerates technologies and not concern.
+
+
+Symptoms that your front end technology is under powered.
+ - A partial basically takes one template and embeds it in another template.
+
+The framework can not know how to seperate your concerns for you. it can only provide powerful and expressive tools
+to let you do it. the volcabulary you are speaking is that of the framework and not your application.
+
+
+React component is a highly cohesive builing block for UIs loosely coupled with other components.
+
+Using cohesion to seperate your concerns with the full power of javascript and not some crippling templating language.
+
+test are unit testable. you dont need somekind of dependency injection framework unless that is how you want to structure your application.
+
+only put your display logic in your components.
+
+what about xss
+
+
+react is all about components and not about templates and this is how we want you to seperate your concerns.
+
+
+the entire app is re-rendered on every single data change.
+
+re rendering all the dom nodes on your page is way too expensive.
+so a virtual dom is used which diffs only the change.
+
+now for example. if i tying into the text field and another piece of data updates. i do not want to loose what i am typing into the text field. 
+
+When you have a virtual dom representation. you are not tied to the browser. you can run your code anywhere even on embedded devices.
+
+
+-----------------------------------------------------------------------------------------------------------------
+Random note on react.
+There are two components: Toolbar which makes a few buttons that change the number, and App which is our top-level component that uses Toolbar. App has state: the current value of the number. It passes this state into Toolbar, so that toolbar can decrement and increment the number. But Toolbar never touches our app state; it can make a new number, and call the onChange handler with the new number, but it can't do anything else. It's up to the App component to bind the onChange handler to one of its methods which takes the new number and actually modifies the state.
+
+
+
+
+
+
+
+
+
+
+
