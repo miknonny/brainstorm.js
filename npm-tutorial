@@ -12,10 +12,95 @@ npm install <module name>
 
 # Installing and saving the dependencies  in a package.json file.
 
-`npm install --save`
+`npm install <package> --save`
 
 # Writing npm test.
 
 'touch test.js'
 edit package.json to point to test.js.
+
+# Login adduser.
+`npm adduser <name>`
+
+# Add the description and repository in the package.json;
+# create a README.md file.
+
+# To publish a package.
+`npm publish`
+
+
+# Adding a version to your package.
+npm version <0.0.0> 
+first 0 -> major release change in the api. 
+second 0 -> minor release added more api.
+third 0 -> changes in code. or small errors.
+
+-alpha
+prereleased for a new version.
+
+after you bump your version no. make sure to publish your package again. note that npm
+will never let you publish your package if you do not bump your version no after making changes to your code.
+
+# npm add dist-tag.
+by default npm tags your package @latest
+
+'npm dist-tag add <package>@<version> stable'
+
+Note that you can now install package by referencing <package>@<latest>
+
+# Removing a dist tag.
+Note that the only tag that we can not remove is the latest tag.
+
+`npm dist-tag rm <package> <tagname>`
+
+# Detecing outdated packages.
+what do we do when someone else updates their package.
+we can detect outdated packages due to semantic versioning.
+use the following command to detect outdated packages.
+
+`npm outdated`
+
+# Updating outdated packages.
+we use the command below to download all updates required.
+
+`npm update`
+
+# removing dependencies.
+the `--save` flag also removes the depencies in package.json.
+npm rm --save <package>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
